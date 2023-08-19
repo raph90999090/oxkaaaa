@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund Manager</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles_portfolio.css">
+</head>
+
+<body>
+
+<div class="container">
+    <canvas id="portfolioChart"></canvas>
+    
+
+
+    <div class="theme-toggle">
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
+    
+    <div class="controls">
+        <h3>Ajuster le portefeuille:</h3>
+        <label>Nom de l'actif:</label>
+        <input type="text" id="assetName" placeholder="e.g. Bitcoin">
+        
+        <label>Categorie:</label>
+        <select id="assetCategory">
+            <option value="Trading Intraweek">Trading Intraweek</option>
+            <option value="Yield Farming LR">Yield Farming LR</option>
+            <option value="Yield Farming HR">Yield Farming HR</option>
+            <option value="Options">Options</option>
+            <option value="Fonds de réserve">Fonds de réserve</option>
+            <option value="Spot Bag">Spot Bag</option>
+        </select>
+        
+        <label>Value ($):</label>
+        <input type="number" id="assetValue" placeholder="e.g. 1000">
+        
+        <button onclick="addAsset()">Add Asset</button>
+        <button onclick="removeAsset()">Remove Asset</button>
+    </div>
+
+
+    <canvas id="portfolioChart"></canvas>
+
+    <!-- Sub pie charts -->
+    <div class="sub-charts">
+        <div class="sub-chart">
+            <canvas id="tradingIntraweekChart"></canvas>
+            <p>Trading Intraweek</p>
+        </div>
+        <!-- Repeat similar divs for other sub-charts -->
+
+
+
+
+
+        <div class="sub-chart">
+            <canvas id="yieldfarminglowriskChart"></canvas>
+            <p>Yield Farming LR</p>
+        </div>
+
+
+
+
+
+        <div class="sub-chart">
+            <canvas id="yieldfarminghighriskChart"></canvas>
+            <p>Yield Farming HR</p>
+        </div>
+
+
+
+
+
+        <div class="sub-chart">
+            <canvas id="optionsChart"></canvas>
+            <p>Options</p>
+        </div>
+
+
+
+
+
+        <div class="sub-chart">
+            <canvas id="fondsderéserveChart"></canvas>
+            <p>Fonds de réserve</p>
+        </div>
+
+
+
+
+
+
+        <div class="sub-chart">
+            <canvas id="spotbagChart"></canvas>
+            <p>Spot Bag</p>
+        </div>        
+
+
+    </div>  
+</div>
+
+
+
+<script src="scripts_portfolio.js"></script>
+
+</body>
+</html>
