@@ -1,0 +1,60 @@
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+canvas {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.controls {
+    margin-top: 40px;
+}
+
+
+.sub-charts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.sub-chart {
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+
+
+/* Variables pour le mode clair */
+:root {
+    --background-color: white;
+    --text-color: black;
+    --input-background: #f0f0f0;
+}
+
+/* Variables pour le mode sombre */
+[data-theme="dark"] {
+    --background-color: #222;
+    --text-color: white;
+    --input-background: #333;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input, select, button {
+    background-color: var(--input-background);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ... Reste de vos styles ... */
