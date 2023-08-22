@@ -19,7 +19,7 @@ var labelsMain = [
     'Trading Intraweek', 'Yield Farming LR', 'Yield Farming HR', 
     'Options', 'Fonds de réserve', 'Spot Bag'
 ];
-var dataMain = [2975, 1020, 680, 500, 2321, 995];
+var dataMain = [520, 2000, 300, 150, 5030, 500];
 
 var mainConfig = {
     type: 'doughnut',
@@ -49,34 +49,34 @@ var mainChart = new Chart(ctxMain, mainConfig);
 
 // Sub pie chart for Trading Intraweek
 var ctxSubTradingIntraweek = document.getElementById('tradingIntraweekChart').getContext('2d');
-var dataSubTradingIntraweek = [1, 1]; // Sample data. Adjust as needed.
+var dataSubTradingIntraweek = [0, 500]; // Sample data. Adjust as needed.
 
 
 var ctxSubyieldfarminglowrisk = document.getElementById('yieldfarminglowriskChart').getContext('2d');
-var dataSubyieldfarminglowrisk = [1, 1, 1, 1, 1, 1]; // Sample data. Adjust as needed.
+var dataSubyieldfarminglowrisk = [0, 0, 0, 0, 0, 0]; // Sample data. Adjust as needed.
 
 
 var ctxSubyieldfarminghighrisk = document.getElementById('yieldfarminghighriskChart').getContext('2d');
-var dataSubyieldfarminghighrisk = [1, 1, 1, 1, 1, 1]; // Sample data. Adjust as needed.
+var dataSubyieldfarminghighrisk = [0, 0, 0, 0, 0, 0]; // Sample data. Adjust as needed.
 
 
 var ctxSuboptions = document.getElementById('optionsChart').getContext('2d');
-var dataSuboptions = [1, 1, 1, 1,]; // Sample data. Adjust as needed.
+var dataSuboptions = [0, 0, 0, 0]; // Sample data. Adjust as needed.
 
 
 
 var ctxSubfondsderéserve = document.getElementById('fondsderéserveChart').getContext('2d');
-var dataSubfondsderéserve = [1, 1]; // Sample data. Adjust as needed.
+var dataSubfondsderéserve = [0, 0]; // Sample data. Adjust as needed.
 
 
 var ctxSubspotbag = document.getElementById('spotbagChart').getContext('2d');
-var dataSubspotbag = [1, 1]; // Sample data. Adjust as needed.
+var dataSubspotbag = [0, 0]; // Sample data. Adjust as needed.
 
 
 
 
 
-var labelsSubTradingIntraweek = ['BTC', 'ETH'];
+var labelsSubTradingIntraweek = ['BTC', 'USD'];
 var labelsSubyieldfarminglowrisk = ['WBTC', 'WMATIC', 'WETH', 'USDT', 'USDC', 'DAI'];
 var labelsSubyieldfarminghighrisk = ['SHITCOIN1', 'SHITCOIN2', 'SHITCOIN3', 'SHITCOIN4', 'SHITCOIN5', 'SHITCOIN6'];
 var labelsSuboptions = ['BTC CALL', 'BTC PUT', 'ETH CALL', 'ETH PUT'];
@@ -92,7 +92,7 @@ var subTradingIntraweekConfig = {
         labels: labelsSubTradingIntraweek,
         datasets: [{
             data: dataSubTradingIntraweek,
-            backgroundColor: [ '#ff9999',  '#99ff99'],
+            backgroundColor: [ '#ff9999', '#66b2ff', '#99ff99', '#ffcc99', '#c2c2f0', '#ffd480'],
             hoverOffset: 10
         }]
     },
@@ -120,7 +120,7 @@ var subyieldfarminglowriskConfig = {
         labels: labelsSubyieldfarminglowrisk,
         datasets: [{
             data: dataSubyieldfarminglowrisk,
-            backgroundColor: ['#66b2ff', '#d3d3d3', '#ff9999',  '#99ff99', '#c2c2f0', '#ffd480'],
+            backgroundColor: ['#ff9999', '#66b2ff', '#99ff99', '#ffcc99', '#c2c2f0', '#ffd480'],
             hoverOffset: 10
         }]
     },
@@ -148,7 +148,7 @@ var subyieldfarminghighriskConfig = {
         labels: labelsSubyieldfarminghighrisk,
         datasets: [{
             data: dataSubyieldfarminghighrisk,
-            backgroundColor: ['#66b2ff', '#d3d3d3', '#ff9999',  '#99ff99', '#c2c2f0', '#ffd480'],
+            backgroundColor: ['#ff9999', '#66b2ff', '#99ff99', '#ffcc99', '#c2c2f0', '#ffd480'],
             hoverOffset: 10
         }]
     },
@@ -176,7 +176,7 @@ var suboptionsConfig = {
         labels: labelsSuboptions,
         datasets: [{
             data: dataSuboptions,
-            backgroundColor: ['#66b2ff', '#d3d3d3', '#ff9999',  '#99ff99'],
+            backgroundColor: ['#ff9999', '#66b2ff', '#99ff99', '#ffcc99', '#c2c2f0', '#ffd480'],
             hoverOffset: 10
         }]
     },
@@ -206,7 +206,7 @@ var subfondsderéserveConfig = {
         labels: labelsSubfondsderéserve,
         datasets: [{
             data: dataSubfondsderéserve,
-            backgroundColor: [ '#d3d3d3', '#ff9999'],
+            backgroundColor: ['#ff9999', '#66b2ff', '#99ff99', '#ffcc99', '#c2c2f0', '#ffd480'],
             hoverOffset: 10
         }]
     },
@@ -239,7 +239,7 @@ var subspotbagConfig = {
         labels: labelsSubspotbag,
         datasets: [{
             data: dataSubspotbag,
-            backgroundColor: ['#c2c2f0', '#ffd480'],
+            backgroundColor: ['#ff9999', '#66b2ff', '#99ff99', '#ffcc99', '#c2c2f0', '#ffd480'],
             hoverOffset: 10
         }]
     },
