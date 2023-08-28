@@ -70,7 +70,7 @@ var dataSubfondsderéserve = [0, 0]; // Sample data. Adjust as needed.
 
 
 var ctxSubspotbag = document.getElementById('spotbagChart').getContext('2d');
-var dataSubspotbag = [0, 0]; // Sample data. Adjust as needed.
+var dataSubspotbag = [0, 500]; // Sample data. Adjust as needed.
 
 
 
