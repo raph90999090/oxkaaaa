@@ -19,7 +19,7 @@ var labelsMain = [
     'Trading Intraweek', 'Yield Farming LR', 'Yield Farming HR', 
     'Options', 'Fonds de réserve', 'Spot Bag'
 ];
-var dataMain = [520, 2000, 300, 150, 5030, 500];
+var dataMain = [520, 2000, 300, 150, 5530, 0];
 
 var mainConfig = {
     type: 'doughnut',
@@ -70,7 +70,7 @@ var dataSubfondsderéserve = [0, 0]; // Sample data. Adjust as needed.
 
 
 var ctxSubspotbag = document.getElementById('spotbagChart').getContext('2d');
-var dataSubspotbag = [0, 500]; // Sample data. Adjust as needed.
+var dataSubspotbag = [0, 0]; // Sample data. Adjust as needed.
 
 
 
